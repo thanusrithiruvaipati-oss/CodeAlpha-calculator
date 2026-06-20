@@ -21,12 +21,8 @@ function calculate(){
     }
 }
 
-// Keyboard Support
-
 document.addEventListener("keydown",(event)=>{
-
     const key = event.key;
-
     if(
         (key >= "0" && key <= "9") ||
         key === "+" ||
@@ -37,15 +33,12 @@ document.addEventListener("keydown",(event)=>{
     ){
         appendValue(key);
     }
-
     else if(key === "Enter"){
         calculate();
     }
-
     else if(key === "Backspace"){
         deleteLast();
     }
-
     else if(key === "Escape"){
         clearDisplay();
     }
